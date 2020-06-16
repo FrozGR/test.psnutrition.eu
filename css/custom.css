@@ -1,0 +1,47 @@
+/* Your custom css code goes here */
+.dropdown-menu {
+    background: black;
+    margin-top: 0;
+    opacity: 0.5;
+}
+.dropdown-menu .dropdown-toggle::after {
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    line-height:10pt;
+}
+.dropdown-menu .dropdown .dropdown-menu {
+    background: black;
+	color: white;
+    left: 100%;
+    top: 0%;
+    margin:0 20px;
+    border-width: 0;
+}
+.dropdown-menu .dropdown .dropdown-menu.left {
+    right: 100%;
+    left: auto;
+    background: black;
+	color: white;
+}
+
+.dropdown-menu > li a:hover {
+	background: black;
+    color: white;
+}
+
+.dropdown-menu > li.show {
+	background: black;
+	color: white;
+}
+.dropdown-menu > li.show > a{
+	color: black;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu .dropdown .dropdown-menu {
+        margin:0;
+        border-width: 1px;
+    }
+}
